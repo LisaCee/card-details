@@ -1,0 +1,27 @@
+@use 'variables';
+
+* {
+    font-family: variables.$font-family;
+
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+button {
+    background-color: variables.$very-dark-violet;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px
+}

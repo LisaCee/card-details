@@ -1,0 +1,26 @@
+* {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+button {
+  background-color: hsl(278deg, 68%, 11%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=form.css.map */
