@@ -1,13 +1,13 @@
-import { CardForm } from "./components/form";
+import {Container} from "./components/container";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-        <CardForm/>
-    </div>
-  );
+	return (
+		<div className="App">
+			<header className="App-header">
+			</header>
+			<Container/>
+		</div>
+	);
 }
 
 export default App;

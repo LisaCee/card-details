@@ -2,20 +2,41 @@
 
 * {
     font-family: variables.$font-family;
-
+    font-size: variables.$font-size;
 }
 
 form {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    max-width: 500px;
+    max-width: fit-content;
 }
 
 label {
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
+    color: variables.$very-dark-violet;
+    margin: 1rem 0;
+}
+
+input {
+    color: variables.$light-gray-violet;
+    border: 1px solid variables.$light-gray-violet;
+    border-radius: 10px;
+    padding: 0.5rem;
+    box-shadow: 1px 1px 3px variables.$light-gray-violet;
+    margin-top: 0.25rem;
+    max-width: 500px;
+}
+
+input::placeholder {
+    color: variables.$light-gray-violet;
+}
+
+.fields-small, fieldset {
+    display: flex;
+    align-items: baseline;
 }
 
 button {
@@ -23,5 +44,6 @@ button {
     color: white;
     border: none;
     border-radius: 10px;
-    padding: 10px
+    padding: 10px;
+    margin: 1rem 0;
 }
