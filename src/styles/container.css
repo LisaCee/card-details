@@ -1,0 +1,14 @@
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  background-image: url("../images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=container.css.map */

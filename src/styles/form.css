@@ -7,7 +7,6 @@ form {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  max-width: fit-content;
 }
 
 label {
@@ -19,13 +18,12 @@ label {
 }
 
 input {
-  color: hsl(270deg, 3%, 87%);
+  color: hsl(278deg, 68%, 11%);
   border: 1px solid hsl(270deg, 3%, 87%);
   border-radius: 10px;
   padding: 0.5rem;
   box-shadow: 1px 1px 3px hsl(270deg, 3%, 87%);
   margin-top: 0.25rem;
-  max-width: 500px;
 }
 
 input::placeholder {
@@ -35,6 +33,10 @@ input::placeholder {
 .fields-small, fieldset {
   display: flex;
   align-items: baseline;
+}
+
+fieldset {
+  border: none;
 }
 
 button {

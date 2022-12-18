@@ -1,10 +1,10 @@
 import {CardFront} from "./card-front";
 import {CardBack} from './card-back'
 
-export function Card() {
+export function Card( { cardData } ) {
 	return (
 		<>
-			<CardFront/>
+			<CardFront cardData={cardData}/>
 			<CardBack/>
 		</>
 	)
