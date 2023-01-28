@@ -1,5 +1,7 @@
-export function CardBack() {
+export function CardBack( { cardData } ) {
 	return (
-		<div></div>
-	);
+		<div className="cardBack">
+			<div className="cvc">{cardData.cvc}</div>
+		</div>
+	)
 }

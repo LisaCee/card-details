@@ -9,6 +9,9 @@ form {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    width: 480px;
+    margin-left: 100px;
+    border: 1px solid red;
 }
 
 label {
@@ -26,11 +29,19 @@ input {
     padding: 0.5rem;
     box-shadow: 1px 1px 3px variables.$light-gray-violet;
     margin-top: 0.25rem;
-
 }
 
 input::placeholder {
     color: variables.$light-gray-violet;
+}
+
+.fields-small input {
+    //width: 90px;
+}
+
+.fields-small #expDate input {
+    width: 55px;
+    margin-right: 10px;
 }
 
 .fields-small, fieldset {
@@ -40,6 +51,7 @@ input::placeholder {
 
 fieldset {
     border: none;
+    padding: 0;
 }
 
 button {

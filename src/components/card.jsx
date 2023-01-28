@@ -4,8 +4,10 @@ import {CardBack} from './card-back'
 export function Card( { cardData } ) {
 	return (
 		<>
-			<CardFront cardData={cardData}/>
-			<CardBack/>
+			<div className="card">
+				<CardFront cardData={cardData}/>
+				<CardBack cardData={cardData}/>
+			</div>
 		</>
 	)
 }

@@ -1,0 +1,46 @@
+@use 'variables';
+
+.card {
+    background-image: url("../images/bg-main-desktop.png");
+    background-size: 483px;
+    background-repeat: no-repeat;
+    height: 900px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardFront {
+    background-image: url("../images/bg-card-front.png");
+    background-repeat: no-repeat;
+    height: 245px;
+    width: 447px;
+    color: variables.$light-gray-violet;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 1.5rem;
+
+    .cardLogo {
+        background-image: url("../images/card-logo.svg");
+        height: 50px;
+        background-repeat: no-repeat;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.cardBack {
+    height: 245px;
+    width: 447px;
+    background-image: url("../images/bg-card-back.png");
+    margin-left: 15rem;
+}

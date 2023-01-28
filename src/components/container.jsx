@@ -6,11 +6,12 @@ import '../styles/container.css';
 
 export function Container() {
 	const [cardData, setCardData] = useState( {
-		'name'      : '',
-		'cardNumber': '',
-		'expMonth'  : '',
-		'expYear'   : '',
-		'cvc'       : ''
+		'name'           : '',
+		'placeholderName': 'Jane Appleseed',
+		'cardNumber'     : '',
+		'expMonth'       : '',
+		'expYear'        : '',
+		'cvc'            : ''
 	} );
 	console.log( cardData );
 

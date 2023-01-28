@@ -1,14 +1,21 @@
-.container {
-  max-width: 1500px;
+body {
   margin: 0 auto;
 }
 
-.flexContainer {
+.container {
   display: flex;
-  justify-content: space-between;
-  background-image: url("../images/bg-main-desktop.png");
-  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
+}
+
+.flexContainer {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  max-height: 900px;
+  width: 1440px;
 }
 
 /*# sourceMappingURL=container.css.map */

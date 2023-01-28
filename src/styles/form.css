@@ -7,6 +7,9 @@ form {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  width: 480px;
+  margin-left: 100px;
+  border: 1px solid red;
 }
 
 label {
@@ -30,6 +33,11 @@ input::placeholder {
   color: hsl(270deg, 3%, 87%);
 }
 
+.fields-small #expDate input {
+  width: 55px;
+  margin-right: 10px;
+}
+
 .fields-small, fieldset {
   display: flex;
   align-items: baseline;
@@ -37,6 +45,7 @@ input::placeholder {
 
 fieldset {
   border: none;
+  padding: 0;
 }
 
 button {
