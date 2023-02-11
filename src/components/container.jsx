@@ -1,5 +1,6 @@
 import {CardForm} from "./form";
 import {Card} from './card';
+import {Confirmation} from "./confirmation";
 import {useState} from "react";
 
 import '../styles/container.css';
@@ -13,7 +14,7 @@ export function Container() {
 		'expYear'        : '',
 		'cvc'            : ''
 	} );
-	console.log( cardData );
+	const [submitted, hasSubmitted] = useState( false );
 
 	function handleUpdate( e ) {
 		setCardData( {
@@ -23,15 +24,33 @@ export function Container() {
 	}
 
 	function handleSubmit( e ) {
-		console.log( cardData );
 		e.preventDefault();
+		hasSubmitted( true );
+	}
+
+	function resetForm( e ) {
+		e.preventDefault();
+		hasSubmitted( false );
+		setCardData( {
+			'name'           : '',
+			'placeholderName': 'Jane Appleseed',
+			'cardNumber'     : '',
+			'expMonth'       : '',
+			'expYear'        : '',
+			'cvc'            : ''
+		} )
 	}
 
 	return (
 		<div className="container">
 			<div className="flexContainer">
 				<Card cardData={cardData}/>
-				<CardForm cardData={cardData} onChange={handleUpdate} onSubmit={handleSubmit}/>
+				{!submitted ?
+					(<CardForm
+						cardData={cardData}
+						onChange={handleUpdate}
+						onSubmit={handleSubmit}/>)
+					: (<Confirmation onClick={resetForm}/>)}
 			</div>
 		</div>
 	)

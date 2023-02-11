@@ -14,7 +14,7 @@ export function CardForm( { cardData, onChange, onSubmit } ) {
 			<div>
 				<label>
 					Card Number
-					<input type="number" placeholder="e.g. 1234 5678 9123 0000" name="cardNumber" value={cardData.cardNumber} onChange={onChange}></input>
+					<input type="text" placeholder="e.g. 1234 5678 9123 0000" name="cardNumber" value={cardData.cardNumber} onChange={onChange}></input>
 				</label>
 			</div>
 			<div className="fields-small">
