@@ -7,12 +7,18 @@ import '../styles/container.css';
 
 export function Container() {
 	const [cardData, setCardData] = useState( {
-		'name'           : '',
-		'placeholderName': 'Jane Appleseed',
-		'cardNumber'     : '',
-		'expMonth'       : '',
-		'expYear'        : '',
-		'cvc'            : ''
+		'name'      : '',
+		'cardNumber': '',
+		'expMonth'  : '',
+		'expYear'   : '',
+		'cvc'       : '',
+		placeholders: {
+			'name'      : 'Jane Appleseed',
+			'cardNumber': '0000000000000000',
+			'expMonth'  : '00',
+			'expYear'   : '00',
+			'cvc'       : '000'
+		}
 	} );
 	const [submitted, hasSubmitted] = useState( false );
 
